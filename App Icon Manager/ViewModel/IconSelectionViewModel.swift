@@ -34,14 +34,14 @@ class IconSelectionViewModel: ObservableObject {
         let user = "elrumo"
         
         repositoriesAPIController.getBranchDetails(
-            ofRepository: repository,
-            fromUser: user,
+            repository: repository,
+            username: user,
             branch: "master"
         )
         .flatMap { versionControlBranch in
             return repositoriesAPIController.getTree(
                 repository: repository,
-                fromUser: user,
+                username: user,
                 treeSHA: versionControlBranch.commit.sha
             )
         }
@@ -49,7 +49,7 @@ class IconSelectionViewModel: ObservableObject {
             let x = versionControlTree.tree.first { $0.path == "icons" && $0.type == .tree }!
             return repositoriesAPIController.getTree(
                 repository: repository,
-                fromUser: user,
+                username: user,
                 treeSHA: x.sha
             )
         }

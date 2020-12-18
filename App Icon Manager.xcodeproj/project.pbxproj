@@ -16,9 +16,12 @@
 		296FD604258787DA00864FDC /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296FD603258787DA00864FDC /* Application.swift */; };
 		296FD608258792D900864FDC /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296FD607258792D900864FDC /* Icon.swift */; };
 		296FD639258924B500864FDC /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296FD638258924B500864FDC /* IconView.swift */; };
+		29A8CA8B258CCCE80042E884 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A8CA8A258CCCE80042E884 /* NetworkService.swift */; };
+		29A8CA8E258CCCF60042E884 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A8CA8D258CCCF60042E884 /* Endpoint.swift */; };
+		29A8CA92258CCD480042E884 /* RepositoriesAPIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A8CA91258CCD480042E884 /* RepositoriesAPIController.swift */; };
 		29E3A227258BB401000F3262 /* IconSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3A226258BB401000F3262 /* IconSelectionView.swift */; };
 		29E3A22B258BB9CF000F3262 /* IconSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3A22A258BB9CF000F3262 /* IconSelectionViewModel.swift */; };
-		29E3A22E258C045A000F3262 /* GitHubBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3A22D258C045A000F3262 /* GitHubBranch.swift */; };
+		29E3A22E258C045A000F3262 /* VersionControlBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3A22D258C045A000F3262 /* VersionControlBranch.swift */; };
 		29E3A231258C1565000F3262 /* VersionControlTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3A230258C1565000F3262 /* VersionControlTree.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,9 +38,12 @@
 		296FD603258787DA00864FDC /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		296FD607258792D900864FDC /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		296FD638258924B500864FDC /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		29A8CA8A258CCCE80042E884 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		29A8CA8D258CCCF60042E884 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		29A8CA91258CCD480042E884 /* RepositoriesAPIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesAPIController.swift; sourceTree = "<group>"; };
 		29E3A226258BB401000F3262 /* IconSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSelectionView.swift; sourceTree = "<group>"; };
 		29E3A22A258BB9CF000F3262 /* IconSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSelectionViewModel.swift; sourceTree = "<group>"; };
-		29E3A22D258C045A000F3262 /* GitHubBranch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubBranch.swift; sourceTree = "<group>"; };
+		29E3A22D258C045A000F3262 /* VersionControlBranch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionControlBranch.swift; sourceTree = "<group>"; };
 		29E3A230258C1565000F3262 /* VersionControlTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionControlTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +86,7 @@
 		296FD5E6258673CF00864FDC /* App Icon Manager */ = {
 			isa = PBXGroup;
 			children = (
+				29A8CA89258CCCDC0042E884 /* Services */,
 				296FD5E7258673CF00864FDC /* App_Icon_ManagerApp.swift */,
 				296FD6362589240900864FDC /* Views */,
 				2931562E258B78C5002AA4DB /* ViewModel */,
@@ -104,7 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				296FD603258787DA00864FDC /* Application.swift */,
-				29E3A22D258C045A000F3262 /* GitHubBranch.swift */,
+				29E3A22D258C045A000F3262 /* VersionControlBranch.swift */,
+				29A8CA8D258CCCF60042E884 /* Endpoint.swift */,
 				29E3A230258C1565000F3262 /* VersionControlTree.swift */,
 				296FD607258792D900864FDC /* Icon.swift */,
 			);
@@ -120,6 +128,23 @@
 				296FD638258924B500864FDC /* IconView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		29A8CA89258CCCDC0042E884 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				29A8CA90258CCD2B0042E884 /* NetworkLayer */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		29A8CA90258CCD2B0042E884 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				29A8CA8A258CCCE80042E884 /* NetworkService.swift */,
+				29A8CA91258CCD480042E884 /* RepositoriesAPIController.swift */,
+			);
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,13 +219,16 @@
 				296FD5EA258673CF00864FDC /* AppIconManagerView.swift in Sources */,
 				29E3A22B258BB9CF000F3262 /* IconSelectionViewModel.swift in Sources */,
 				296FD639258924B500864FDC /* IconView.swift in Sources */,
+				29A8CA8E258CCCF60042E884 /* Endpoint.swift in Sources */,
 				296FD604258787DA00864FDC /* Application.swift in Sources */,
 				296FD5E8258673CF00864FDC /* App_Icon_ManagerApp.swift in Sources */,
 				29E3A227258BB401000F3262 /* IconSelectionView.swift in Sources */,
-				29E3A22E258C045A000F3262 /* GitHubBranch.swift in Sources */,
+				29E3A22E258C045A000F3262 /* VersionControlBranch.swift in Sources */,
 				29E3A231258C1565000F3262 /* VersionControlTree.swift in Sources */,
 				296FD608258792D900864FDC /* Icon.swift in Sources */,
+				29A8CA92258CCD480042E884 /* RepositoriesAPIController.swift in Sources */,
 				296FD5FD258675DE00864FDC /* ListItemView.swift in Sources */,
+				29A8CA8B258CCCE80042E884 /* NetworkService.swift in Sources */,
 				29315630258B78D5002AA4DB /* AppIconManagerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
