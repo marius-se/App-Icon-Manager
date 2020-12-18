@@ -112,8 +112,8 @@
 			children = (
 				296FD603258787DA00864FDC /* Application.swift */,
 				29E3A22D258C045A000F3262 /* VersionControlBranch.swift */,
-				29A8CA8D258CCCF60042E884 /* Endpoint.swift */,
 				29E3A230258C1565000F3262 /* VersionControlTree.swift */,
+				29A8CA8D258CCCF60042E884 /* Endpoint.swift */,
 				296FD607258792D900864FDC /* Icon.swift */,
 			);
 			path = Models;
