@@ -17,6 +17,7 @@ struct IconSelectionView: View {
     
     var body: some View {
         VStack {
+            Spacer()
             switch viewModel.state {
             case .idle:
                 ScrollView {
@@ -42,6 +43,12 @@ struct IconSelectionView: View {
             case .error(let message):
                 ProgressView(message)
             }
+            Spacer()
+            HStack {
+                Button("Reset icon", action: viewModel.resetIcon)
+                Spacer()
+            }
+            .padding()
         }
         .onAppear(perform: viewModel.loadIcons)
     }

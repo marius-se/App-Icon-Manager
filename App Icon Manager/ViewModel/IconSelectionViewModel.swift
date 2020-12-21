@@ -5,7 +5,7 @@
 //  Created by Marius Seufzer on 17.12.20.
 //
 
-import Foundation
+import AppKit
 import Combine
 
 class IconSelectionViewModel: ObservableObject {
@@ -15,9 +15,9 @@ class IconSelectionViewModel: ObservableObject {
     // MARK: - Properties
     @Published var icons: [Icon] = []
     @Published var state: State = .idle
-    private let application: Application
     
-    var cancellables = Set<AnyCancellable>()
+    private let application: Application
+    private var cancellables = Set<AnyCancellable>()
     
     // MARK: - Init
     init(forApplication application: Application) {
@@ -25,6 +25,11 @@ class IconSelectionViewModel: ObservableObject {
     }
     
     // MARK: - Class methods
+    func resetIcon()  {
+        let workspace = NSWorkspace.shared
+        workspace.setIcon(nil, forFile: application.path, options: [])
+    }
+    
     func loadIcons() {
         state = .loading
         
