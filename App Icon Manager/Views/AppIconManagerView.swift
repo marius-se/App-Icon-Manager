@@ -21,7 +21,8 @@ struct AppIconManagerView: View {
                         NavigationLink(
                             destination: IconSelectionView(
                                 viewModel: .init(
-                                    forApplication: application
+                                    forApplication: application,
+                                    onIconReset: { viewModel.rereadApplications() }
                                 )
                             )
                         ) {
@@ -46,7 +47,7 @@ struct AppIconManagerView: View {
             }
         }
         .onAppear {
-            self.viewModel.loadApplications()
+            self.viewModel.rereadApplications()
         }
     }
 }

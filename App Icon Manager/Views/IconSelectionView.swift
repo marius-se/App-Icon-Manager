@@ -59,6 +59,6 @@ struct IconSelectionView_Previews: PreviewProvider {
     static let app = Application(name: "Blender", path: "/Applications/Blender")
     
     static var previews: some View {
-        IconSelectionView(viewModel: IconSelectionViewModel(forApplication: app))
+        IconSelectionView(viewModel: IconSelectionViewModel(forApplication: app, onIconReset: nil))
     }
 }

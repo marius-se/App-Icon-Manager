@@ -16,7 +16,7 @@ class AppIconManagerViewModel: ObservableObject {
     @Published var state: State = .idle
     
     // MARK: - Class methods
-    func loadApplications() {
+    func rereadApplications() {
         state = .loading
         guard let applicationsFolderURL = FileManager.default.urls(
             for: .applicationDirectory,

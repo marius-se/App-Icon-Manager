@@ -19,15 +19,19 @@ class IconSelectionViewModel: ObservableObject {
     private let application: Application
     private var cancellables = Set<AnyCancellable>()
     
+    var onIconReset: (() -> Void)?
+    
     // MARK: - Init
-    init(forApplication application: Application) {
+    init(forApplication application: Application, onIconReset: (() -> Void)?) {
         self.application = application
+        self.onIconReset = onIconReset
     }
     
     // MARK: - Class methods
     func resetIcon()  {
         let workspace = NSWorkspace.shared
         workspace.setIcon(nil, forFile: application.path, options: [])
+        onIconReset?()
     }
     
     func loadIcons() {
