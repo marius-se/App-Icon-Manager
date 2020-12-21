@@ -28,8 +28,10 @@ struct IconSelectionView: View {
                         content: {
                             ForEach(viewModel.icons) { icon in
                                 IconView(
-                                    image: .constant(NSImage()),
-                                    title: icon.name
+                                    viewModel: IconViewModel(
+                                        imageURL: URL(string: icon.path)!,
+                                        title: icon.name
+                                    )
                                 )
                             }
                         }

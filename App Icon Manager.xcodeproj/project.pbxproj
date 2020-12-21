@@ -19,6 +19,7 @@
 		29A8CA8B258CCCE80042E884 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A8CA8A258CCCE80042E884 /* NetworkService.swift */; };
 		29A8CA8E258CCCF60042E884 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A8CA8D258CCCF60042E884 /* Endpoint.swift */; };
 		29A8CA92258CCD480042E884 /* RepositoriesAPIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A8CA91258CCD480042E884 /* RepositoriesAPIController.swift */; };
+		29C5D1F725910F4E000284B8 /* IconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C5D1F625910F4E000284B8 /* IconViewModel.swift */; };
 		29E3A227258BB401000F3262 /* IconSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3A226258BB401000F3262 /* IconSelectionView.swift */; };
 		29E3A22B258BB9CF000F3262 /* IconSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3A22A258BB9CF000F3262 /* IconSelectionViewModel.swift */; };
 		29E3A22E258C045A000F3262 /* VersionControlBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3A22D258C045A000F3262 /* VersionControlBranch.swift */; };
@@ -41,6 +42,7 @@
 		29A8CA8A258CCCE80042E884 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		29A8CA8D258CCCF60042E884 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		29A8CA91258CCD480042E884 /* RepositoriesAPIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesAPIController.swift; sourceTree = "<group>"; };
+		29C5D1F625910F4E000284B8 /* IconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewModel.swift; sourceTree = "<group>"; };
 		29E3A226258BB401000F3262 /* IconSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSelectionView.swift; sourceTree = "<group>"; };
 		29E3A22A258BB9CF000F3262 /* IconSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSelectionViewModel.swift; sourceTree = "<group>"; };
 		29E3A22D258C045A000F3262 /* VersionControlBranch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionControlBranch.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				29E3A230258C1565000F3262 /* VersionControlTree.swift */,
 				29A8CA8D258CCCF60042E884 /* Endpoint.swift */,
 				296FD607258792D900864FDC /* Icon.swift */,
+				29C5D1F625910F4E000284B8 /* IconViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				296FD5EA258673CF00864FDC /* AppIconManagerView.swift in Sources */,
+				29C5D1F725910F4E000284B8 /* IconViewModel.swift in Sources */,
 				29E3A22B258BB9CF000F3262 /* IconSelectionViewModel.swift in Sources */,
 				296FD639258924B500864FDC /* IconView.swift in Sources */,
 				29A8CA8E258CCCF60042E884 /* Endpoint.swift in Sources */,

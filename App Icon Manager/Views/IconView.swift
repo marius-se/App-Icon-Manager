@@ -8,19 +8,21 @@
 import SwiftUI
 
 struct IconView: View {
-    @Binding var image: NSImage
-    let title: String
+    @ObservedObject private(set) var viewModel: IconViewModel
     
     var body: some View {
         HStack {
             Spacer()
             VStack {
                 Spacer()
-                Image(nsImage: image)
+                Image(nsImage: viewModel.image ?? .init())
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 60, height: 60, alignment: .center)
-                Text(title)
+                Text(viewModel.title)
+                    .multilineTextAlignment(.center)
+                    // FIX-ME: dont hardcode this
+                    .frame(height: 32)
                 Spacer()
             }
             Spacer()
@@ -31,9 +33,8 @@ struct IconView: View {
 
 struct GridItemView_Previews: PreviewProvider {
     static var previews: some View {
-        IconView(
-            image: .constant(NSImage(systemSymbolName: "phone", accessibilityDescription: nil)!),
-            title: "Icon Alt 1"
+        IconView(viewModel: IconViewModel(
+                    imageURL: URL(string: "https://via.placeholder.com/150")!, title: "Test 123\n223")
         )
     }
 }
