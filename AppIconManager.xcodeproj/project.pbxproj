@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		291E321028B3C93700D7E461 /* AppIconManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291E320F28B3C93700D7E461 /* AppIconManagerApp.swift */; };
+		291E321228B3C93700D7E461 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291E321128B3C93700D7E461 /* ContentView.swift */; };
+		291E321428B3C93700D7E461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291E321328B3C93700D7E461 /* Assets.xcassets */; };
+		291E321728B3C93700D7E461 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291E321628B3C93700D7E461 /* Preview Assets.xcassets */; };
+		291E322028B3CB6000D7E461 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 291E321F28B3CB6000D7E461 /* ComposableArchitecture */; };
+		29E97F0428B3DD1700059451 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 29E97F0328B3DD1700059451 /* SDWebImageSwiftUI */; };
+		29E97F0628B3F58600059451 /* AppsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E97F0528B3F58600059451 /* AppsClient.swift */; };
+		29E97F0828B3F9F200059451 /* SystemEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E97F0728B3F9F200059451 /* SystemEnvironment.swift */; };
+		29E97F0A28B4189600059451 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E97F0928B4189600059451 /* Icon.swift */; };
+		29E97F0C28B418D100059451 /* IconsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E97F0B28B418D100059451 /* IconsClient.swift */; };
+		29E97F0E28B436E600059451 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E97F0D28B436E600059451 /* App.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		291E320C28B3C93700D7E461 /* AppIconManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIconManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		291E320F28B3C93700D7E461 /* AppIconManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconManagerApp.swift; sourceTree = "<group>"; };
+		291E321128B3C93700D7E461 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		291E321328B3C93700D7E461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		291E321628B3C93700D7E461 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		291E321828B3C93700D7E461 /* AppIconManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppIconManager.entitlements; sourceTree = "<group>"; };
+		29E97F0528B3F58600059451 /* AppsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsClient.swift; sourceTree = "<group>"; };
+		29E97F0728B3F9F200059451 /* SystemEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemEnvironment.swift; sourceTree = "<group>"; };
+		29E97F0928B4189600059451 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		29E97F0B28B418D100059451 /* IconsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsClient.swift; sourceTree = "<group>"; };
+		29E97F0D28B436E600059451 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		291E320928B3C93700D7E461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29E97F0428B3DD1700059451 /* SDWebImageSwiftUI in Frameworks */,
+				291E322028B3CB6000D7E461 /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		291E320328B3C93700D7E461 = {
+			isa = PBXGroup;
+			children = (
+				291E320E28B3C93700D7E461 /* AppIconManager */,
+				291E320D28B3C93700D7E461 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		291E320D28B3C93700D7E461 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				291E320C28B3C93700D7E461 /* AppIconManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		291E320E28B3C93700D7E461 /* AppIconManager */ = {
+			isa = PBXGroup;
+			children = (
+				291E320F28B3C93700D7E461 /* AppIconManagerApp.swift */,
+				291E321128B3C93700D7E461 /* ContentView.swift */,
+				29E97F0928B4189600059451 /* Icon.swift */,
+				29E97F0728B3F9F200059451 /* SystemEnvironment.swift */,
+				29E97F0528B3F58600059451 /* AppsClient.swift */,
+				29E97F0D28B436E600059451 /* App.swift */,
+				29E97F0B28B418D100059451 /* IconsClient.swift */,
+				291E321328B3C93700D7E461 /* Assets.xcassets */,
+				291E321828B3C93700D7E461 /* AppIconManager.entitlements */,
+				291E321528B3C93700D7E461 /* Preview Content */,
+			);
+			path = AppIconManager;
+			sourceTree = "<group>";
+		};
+		291E321528B3C93700D7E461 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				291E321628B3C93700D7E461 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		291E320B28B3C93700D7E461 /* AppIconManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 291E321B28B3C93700D7E461 /* Build configuration list for PBXNativeTarget "AppIconManager" */;
+			buildPhases = (
+				291E320828B3C93700D7E461 /* Sources */,
+				291E320928B3C93700D7E461 /* Frameworks */,
+				291E320A28B3C93700D7E461 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppIconManager;
+			packageProductDependencies = (
+				291E321F28B3CB6000D7E461 /* ComposableArchitecture */,
+				29E97F0328B3DD1700059451 /* SDWebImageSwiftUI */,
+			);
+			productName = AppIconManager;
+			productReference = 291E320C28B3C93700D7E461 /* AppIconManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		291E320428B3C93700D7E461 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					291E320B28B3C93700D7E461 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 291E320728B3C93700D7E461 /* Build configuration list for PBXProject "AppIconManager" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 291E320328B3C93700D7E461;
+			packageReferences = (
+				291E321E28B3CB6000D7E461 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				29E97F0228B3DD1700059451 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = 291E320D28B3C93700D7E461 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				291E320B28B3C93700D7E461 /* AppIconManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		291E320A28B3C93700D7E461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291E321728B3C93700D7E461 /* Preview Assets.xcassets in Resources */,
+				291E321428B3C93700D7E461 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		291E320828B3C93700D7E461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29E97F0828B3F9F200059451 /* SystemEnvironment.swift in Sources */,
+				29E97F0C28B418D100059451 /* IconsClient.swift in Sources */,
+				291E321228B3C93700D7E461 /* ContentView.swift in Sources */,
+				29E97F0628B3F58600059451 /* AppsClient.swift in Sources */,
+				29E97F0A28B4189600059451 /* Icon.swift in Sources */,
+				29E97F0E28B436E600059451 /* App.swift in Sources */,
+				291E321028B3C93700D7E461 /* AppIconManagerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		291E321928B3C93700D7E461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		291E321A28B3C93700D7E461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		291E321C28B3C93700D7E461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppIconManager/AppIconManager.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AppIconManager/Preview Content\"";
+				DEVELOPMENT_TEAM = LFQ78GHDF2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mariusseufzer.AppIconManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		291E321D28B3C93700D7E461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppIconManager/AppIconManager.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AppIconManager/Preview Content\"";
+				DEVELOPMENT_TEAM = LFQ78GHDF2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mariusseufzer.AppIconManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		291E320728B3C93700D7E461 /* Build configuration list for PBXProject "AppIconManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				291E321928B3C93700D7E461 /* Debug */,
+				291E321A28B3C93700D7E461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		291E321B28B3C93700D7E461 /* Build configuration list for PBXNativeTarget "AppIconManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				291E321C28B3C93700D7E461 /* Debug */,
+				291E321D28B3C93700D7E461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		291E321E28B3CB6000D7E461 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+		29E97F0228B3DD1700059451 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		291E321F28B3CB6000D7E461 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 291E321E28B3CB6000D7E461 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		29E97F0328B3DD1700059451 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29E97F0228B3DD1700059451 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 291E320428B3C93700D7E461 /* Project object */;
+}
